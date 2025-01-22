@@ -1,0 +1,8 @@
+sriram@LAPTOP-0FEJ2V7I:~/linux_test$ touch file1.txt
+sriram@LAPTOP-0FEJ2V7I:~/linux_test$ ls -l
+total 0
+-rw-r--r-- 1 sriram sriram 0 Jan 22 16:02 file1.txt
+sriram@LAPTOP-0FEJ2V7I:~/linux_test$ chmod a+x file1.txt
+sriram@LAPTOP-0FEJ2V7I:~/linux_test$ ls -l
+total 0
+-rwxr-xr-x 1 sriram sriram 0 Jan 22 16:02 file1.txt

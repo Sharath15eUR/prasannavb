@@ -1,0 +1,55 @@
+sriram@LAPTOP-0FEJ2V7I:~/linux_test$ ps
+    PID TTY          TIME CMD
+    312 pts/0    00:00:06 bash
+    667 pts/0    00:00:00 ps
+sriram@LAPTOP-0FEJ2V7I:~/linux_test$ ps -e
+    PID TTY          TIME CMD
+      1 ?        00:00:07 systemd
+      2 ?        00:00:02 init-systemd(Ub
+     11 ?        00:00:00 init
+     59 ?        00:00:51 systemd-journal
+     82 ?        00:00:23 systemd-udevd
+    144 ?        00:00:03 systemd-resolve
+    151 ?        00:00:33 systemd-timesyn
+    167 ?        00:00:42 cron
+    168 ?        00:00:01 dbus-daemon
+    181 ?        00:00:01 systemd-logind
+    184 ?        00:00:36 wsl-pro-service
+    189 hvc0     00:00:00 agetty
+    203 tty1     00:00:00 agetty
+    205 ?        00:00:04 rsyslogd
+    218 ?        00:00:00 unattended-upgr
+    310 ?        00:00:00 SessionLeader
+    311 ?        00:00:00 Relay(312)
+    312 pts/0    00:00:06 bash
+    313 pts/1    00:00:00 login
+    398 ?        00:00:01 systemd
+    405 ?        00:00:00 (sd-pam)
+    433 pts/1    00:00:00 bash
+    668 pts/0    00:00:00 ps
+sriram@LAPTOP-0FEJ2V7I:~/linux_test$ ps -aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.2  0.3  21752 12836 ?        Ss   16:06   0:07 /sbin/init
+root           2  0.0  0.0   2616  1444 ?        Sl   16:06   0:02 /init
+root          11  0.0  0.0   2616   132 ?        Sl   16:06   0:00 plan9 --control-socket 6 --log-level 4 --server-fd 7 --pipe-fd 9 --log-truncate
+root          59  1.9  0.5  66828 21708 ?        S<s  16:06   0:51 /usr/lib/systemd/systemd-journald
+root          82  0.8  0.1  24256  6344 ?        Ss   16:06   0:23 /usr/lib/systemd/systemd-udevd
+systemd+     144  0.1  0.3  21452 11968 ?        Ss   16:06   0:03 /usr/lib/systemd/systemd-resolved
+systemd+     151  1.2  0.2  91020  8464 ?        Ssl  16:06   0:33 /usr/lib/systemd/systemd-timesyncd
+root         167  1.5  0.0   4236  2704 ?        Ss   16:06   0:42 /usr/sbin/cron -f -P
+message+     168  0.0  0.1   9524  5124 ?        Ss   16:06   0:01 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         181  0.0  0.2  17976  8224 ?        Ss   16:06   0:01 /usr/lib/systemd/systemd-logind
+root         184  1.3  0.4 1756096 16000 ?       Ssl  16:06   0:36 /usr/libexec/wsl-pro-service -vv
+root         189  0.0  0.0   3160  1084 hvc0     Ss+  16:06   0:00 /sbin/agetty -o -p -- \u --noclear --keep-baud - 115200,38400,9600 vt220
+root         203  0.0  0.0   3116  1192 tty1     Ss+  16:06   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+syslog       205  0.1  0.1 222508  7264 ?        Ssl  16:06   0:04 /usr/sbin/rsyslogd -n -iNONE
+root         218  0.0  0.5 107000 22404 ?        Ssl  16:06   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         310  0.0  0.0   2624   124 ?        Ss   16:06   0:00 /init
+root         311  0.0  0.0   2624   132 ?        S    16:06   0:00 /init
+sriram       312  0.2  0.1   6068  5344 pts/0    Ss   16:06   0:06 -bash
+root         313  0.0  0.1   6688  4548 pts/1    Ss   16:06   0:00 /bin/login -f
+sriram       398  0.0  0.2  20272 11324 ?        Ss   16:06   0:01 /usr/lib/systemd/systemd --user
+sriram       405  0.0  0.0  21144  1724 ?        S    16:06   0:00 (sd-pam)
+sriram       433  0.0  0.1   6056  4936 pts/1    S+   16:06   0:00 -bash
+sriram       669  0.0  0.1   9584  4780 pts/0    R+   16:51   0:00 ps -aux
+sriram@LAPTOP-0FEJ2V7I:~/linux_test$
