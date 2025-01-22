@@ -1,0 +1,11 @@
+sriram@LAPTOP-0FEJ2V7I:~/linux_test$ mkdir dir1
+sriram@LAPTOP-0FEJ2V7I:~/linux_test$ touch dir1/file1.txt dir1/file2.txt dir1/file3.txt
+sriram@LAPTOP-0FEJ2V7I:~/linux_test$ cd dir1
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/dir1$ ls -lt  > sorted_output.txt
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/dir1$ cat sorted_output.txt
+total 0
+-rw-r--r-- 1 sriram sriram 0 Jan 22 16:38 sorted_output.txt
+-rw-r--r-- 1 sriram sriram 0 Jan 22 16:34 file1.txt
+-rw-r--r-- 1 sriram sriram 0 Jan 22 16:34 file2.txt
+-rw-r--r-- 1 sriram sriram 0 Jan 22 16:34 file3.txt
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/dir1$

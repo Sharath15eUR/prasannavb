@@ -1,0 +1,7 @@
+sriram@LAPTOP-0FEJ2V7I:~/linux_test$ mkdir -p dir1/dir2
+sriram@LAPTOP-0FEJ2V7I:~/linux_test$ touch dir1/dir2/file1.txt
+sriram@LAPTOP-0FEJ2V7I:~/linux_test$ ln -s dir1/dir2/file1.txt soft_link
+sriram@LAPTOP-0FEJ2V7I:~/linux_test$ ls
+dir1  file1.txt  file2.txt  soft_link
+sriram@LAPTOP-0FEJ2V7I:~/linux_test$ ls -l soft_link
+lrwxrwxrwx 1 sriram sriram 19 Jan 22 17:21 soft_link -> dir1/dir2/file1.txt
