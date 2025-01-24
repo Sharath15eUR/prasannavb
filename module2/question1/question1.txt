@@ -1,0 +1,26 @@
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2$ mkdir question1
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2$ cd question1
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2/question1$ dd if=/dev/zero of=file1.txt bs=1M count=2
+2+0 records in
+2+0 records out
+2097152 bytes (2.1 MB, 2.0 MiB) copied, 0.0241803 s, 86.7 MB/s
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2/question1$ ls
+file1.txt
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2/question1$ cat file1.txt
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2/question1$ cat file1.txt
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2/question1$ dd if=/dev/zero of=file2.txt bs=1M count=2
+2+0 records in
+2+0 records out
+2097152 bytes (2.1 MB, 2.0 MiB) copied, 0.0031872 s, 658 MB/s
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2/question1$ dd if=/dev/zero of=file3.txt bs=1M count=1
+1+0 records in
+1+0 records out
+1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.00231949 s, 452 MB/s
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2/question1$ ls -lh
+total 5.0M
+-rw-r--r-- 1 sriram sriram 2.0M Jan 24 15:45 file1.txt
+-rw-r--r-- 1 sriram sriram 2.0M Jan 24 15:46 file2.txt
+-rw-r--r-- 1 sriram sriram 1.0M Jan 24 15:46 file3.txt
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2/question1$ find . -type f -size +1M
+./file2.txt
+./file1.txt

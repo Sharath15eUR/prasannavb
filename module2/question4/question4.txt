@@ -1,0 +1,7 @@
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2$ mkdir question4
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2$ cd question4
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2/question4$ ps aux --sort=-%mem | head -n 2
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         268  0.0  0.5 107000 22496 ?        Ssl  15:19   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2/question4$ kill 268
+-bash: kill: (268) - Operation not permitted

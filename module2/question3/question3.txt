@@ -1,0 +1,9 @@
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2$ mkdir question3
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2$ cd question3
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2/question3$ grep 'ERROR' log.txt | grep -v 'DEBUG' > filtered_log.txt
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2/question3$ ls
+filtered_log.txt  log.txt
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2/question3$ cat filtered_log.txt
+ERROR: Unable to connect to the database.
+ERROR: Failed to fetch data from API endpoint '/users'.
+ERROR: Missing required parameter in the request.

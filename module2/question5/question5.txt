@@ -1,0 +1,4 @@
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2$ mkdir question5
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2$ cd question5
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/module2/question5$ ip route | awk '/default/ {print $3}' | sort
+172.29.224.1
