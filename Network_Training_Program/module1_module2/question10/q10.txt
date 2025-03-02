@@ -1,0 +1,7 @@
+A DHCP (Dynamic Host Configuration Protocol) server automatically assigns IP addresses to devices on a network. Here’s how the process works:
+
+Steps in DHCP IP Assignment:
+1.DHCP Discovery:When a device (client) connects to the network, it broadcasts a request (DHCPDISCOVER) to find a DHCP server.
+2.DHCP Offer:The DHCP server responds with a DHCPOFFER, offering an available IP address along with other network settings (subnet mask, gateway, DNS).
+3.DHCP Request:The client accepts the offer by sending a DHCPREQUEST, requesting to use the provided IP address.
+4.DHCP Acknowledgment (ACK):The DHCP server confirms the assignment by sending a DHCPACK, and the client starts using the assigned IP.

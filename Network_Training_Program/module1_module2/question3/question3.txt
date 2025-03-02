@@ -1,0 +1,8 @@
+In Ubuntu VM:
+    sudo tcpdump -i en0sp3 port 80
+
+Generate ICMP Traffic (Manually Trigger Packets)
+    
+    While tcpdump is running, open a new terminal and send some ICMP packets:
+        ping 8.8.8.8
+        sudo tcpdump -i en0sp3 icmp

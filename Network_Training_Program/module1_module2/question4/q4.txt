@@ -1,0 +1,18 @@
+PING:
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/Network_Training_Program/module1_module2/question4$ ping -c 4 www.google.com
+PING www.google.com (142.250.67.196) 56(84) bytes of data.
+64 bytes from bom12s08-in-f4.1e100.net (142.250.67.196): icmp_seq=2 ttl=52 time=27.7 ms
+64 bytes from bom12s08-in-f4.1e100.net (142.250.67.196): icmp_seq=3 ttl=52 time=27.5 ms
+64 bytes from bom12s08-in-f4.1e100.net (142.250.67.196): icmp_seq=4 ttl=52 time=32.0 ms
+
+--- www.google.com ping statistics ---
+4 packets transmitted, 3 received, 25% packet loss, time 3054ms
+rtt min/avg/max/mdev = 27.458/29.029/31.950/2.067 ms
+sriram@LAPTOP-0FEJ2V7I:~/linux_test/Network_Training_Program/module1_module2/question4$
+
+ARP:
+    Address Resolution Protocol Table maps IP addresses to MAC addresses
+    Perform:
+        arp
+        arp -a
+        arp -n

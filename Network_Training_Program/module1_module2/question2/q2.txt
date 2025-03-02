@@ -1,0 +1,19 @@
+STEP 1:Installing and Starting FTP Server
+    sudo apt update && sudo apt install vsftpd -y
+    sudo systemctl start vsftpd && sudo systemctl enable vsftpd
+    sudo sed -i 's/#write_enable=YES/write_enable=YES/' /etc/vsftpd.conf
+    sudo systemctl restart vsftpd
+
+STEP 2:SFTP (via SSH)
+    sudo systemctl start ssh
+
+STEP 3:Connecting to Server FTP Login
+
+ftp 192.168.29.254
+sftp username@192.168.29.254
+
+iv) PUT and GET commands
+
+put C:/Users/admin/Downloads/test.txt
+get sample.txt
+

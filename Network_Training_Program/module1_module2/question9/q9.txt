@@ -1,0 +1,4 @@
+1.Find Router's IP Address
+2.Log into the web interface of the home router
+3.In the Login page enter the Router's username and password
+4. Select the current LAN and see the connected device table  of the router

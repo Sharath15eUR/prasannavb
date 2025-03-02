@@ -1,0 +1,10 @@
+A default gateway is the router or device that connects your local network to other networks, including the internet. 
+It acts as an exit point for traffic going outside your local network.
+
+STEP 1:Find Your Default Gateway
+    ip route | grep default
+STEP 2:Check If the Default Gateway Is Reachable
+    ping -c 5 192.168.29.1
+    
+    If replies are received, the gateway is reachable.
+

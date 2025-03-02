@@ -1,0 +1,12 @@
+i)iwconfig
+    iwconfig is used to check and configure wireless network interfaces
+    Command :
+        iwconfig
+ii)ifconfig
+   ifconfig displays network interface details
+    Command :
+        ifconfig
+iii) For specific interface details
+    ifconfig enp0s3
+iv)To know the speed of interface
+    ethtool enp0s3

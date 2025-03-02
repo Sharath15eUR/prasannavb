@@ -1,0 +1,33 @@
+i) Copying a folder to a remote machine using SCP
+
+    STEP 1:
+    In Ubuntu VM (VirtualBox), run:
+        ip a | grep inet
+    Look for an IP starting with 192.168.X.X
+
+    STEP 2: Enable SSH on Ubuntu VM
+        sudo apt update  
+        sudo apt install openssh-server -y  
+        sudo systemctl start ssh  
+        sudo systemctl status ssh -It shows active
+
+    STEP 3: Copy Files from WSL to Ubuntu VM
+
+    sriram@LAPTOP-0FEJ2V7I:~/linux_test/Network_Training_Program/module1_module2$ ls
+    question1  question2
+    sriram@LAPTOP-0FEJ2V7I:~/linux_test/Network_Training_Program/module1_module2$ scp -r /home/sriram/linux_test/Network_Training_Program/module1_module2/question1/ prasanna@192.168.29.254:/home/prasanna/network/mod1_mod2_assignment/question1
+
+ii) Copying a Folder Locally Using cp
+
+    sriram@LAPTOP-0FEJ2V7I:~/linux_test/Network_Training_Program/module1_module2/question1$ ls
+    file1.txt  q1.txt
+    sriram@LAPTOP-0FEJ2V7I:~/linux_test/Network_Training_Program/module1_module2/question1$ mkdir copied_folder
+    sriram@LAPTOP-0FEJ2V7I:~/linux_test/Network_Training_Program/module1_module2/question1$ ls
+    copied_folder  file1.txt  q1.txt
+    sriram@LAPTOP-0FEJ2V7I:~/linux_test/Network_Training_Program/module1_module2/question1$ ls
+    file1.txt  q1.txt
+    sriram@LAPTOP-0FEJ2V7I:~/linux_test/Network_Training_Program/module1_module2/question1$ cp file1.txt copied_folder/copy.txt
+    sriram@LAPTOP-0FEJ2V7I:~/linux_test/Network_Training_Program/module1_module2/question1$ cd copied_folder
+    sriram@LAPTOP-0FEJ2V7I:~/linux_test/Network_Training_Program/module1_module2/question1/copied_folder$ cat copy.txt
+    Hello this first file for question1
+    sriram@LAPTOP-0FEJ2V7I:~/linux_test/Network_Training_Program/module1_module2/question1/copied_folder$

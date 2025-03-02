@@ -1,0 +1,13 @@
+If two nodes are assigned the same IP address in a network, it creates conflicts, especially in Layer 2 (L2) devices like switches that rely on MAC tables for forwarding packets.
+
+ARP (Address Resolution Protocol) Issues:
+    Since multiple devices have the same IP, ARP struggles to map a unique MAC address to that IP.
+    If only one node is active at a time, the MAC table keeps updating with whichever device last responded, allowing temporary communication.
+    If both nodes communicate simultaneously, the network behaves unpredictably:
+        The node with more active connections or existing ARP cache entries may dominate.
+        Both nodes may respond to ARP requests, causing MAC table instability and packet loss.
+        If the collision persists, neither device receives packets correctly, making both unreachable.
+
+DHCP and Static IP Conflicts:
+    If a DHCP server is managing IP allocation, it detects the conflict and assigns a unique IP to one of the devices.
+    In statically assigned IP networks, manual intervention is required to resolve the conflict

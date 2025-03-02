@@ -1,0 +1,15 @@
+System can be accessed remotely using tools like AnyDesk, TeamViewer inorder to troubleshoot issues, transfer files or manage a system from anywhere
+
+TeamViewer:
+    Steps:
+        Install TeamViewer on both machines.
+        Get the Partner ID and Password from the remote system.
+        Enter the ID in your local system and connect.
+        Accept the request on the remote system.
+
+AnyDesk:
+    Steps:
+        Install AnyDesk on both systems.
+            Open AnyDesk → Copy the Remote Address from the target machine.
+            Enter the ID on your local system and Request Access.
+            Accept the request on the remote system.

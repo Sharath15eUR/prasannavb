@@ -1,0 +1,14 @@
+1 Connecting via SSH :
+SSH (Secure Shell) is a protocol used to securely connect to a remote server.
+
+STEPS:
+Open Terminal and check if ssh installed if not install it
+Connect to remote machine suing 
+    ssh prasanna@192.168.29.1
+exit from server by type exit
+
+2. Connecting to a Remote Machine via Telnet
+Telnet is an unencrypted protocol used for remote access, typically over port 23. It is less secure and not recommended for sensitive operations
+commans:
+telnet <IP_Address> <Port>
+
