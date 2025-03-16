@@ -1,0 +1,25 @@
+The given IP addresses are 
+
+-  192.168.10.5  — A  Class C  IP address with a  /24  subnet mask.  
+-  172.20.15.1  — A  Class B  IP address with a  /16  subnet mask.  
+-  8.8.8.8  — A  Class A  IP address with a  /8  subnet mask, which is the well-known  Google DNS server .  
+
+These classifications are based on the classful addressing scheme.
+
+
+Network Address Translation (NAT): 
+ NAT  is commonly used to convert  private IP addresses  into  public IP addresses  to facilitate internet communication. This process can be implemented using one of the following methods:  
+
+1.  Static NAT (One-to-One Mapping):  Each private IP is mapped to a specific public IP.  
+2.  Dynamic NAT (Pool Mapping):  A pool of public IP addresses is assigned dynamically to internal private IPs.  
+3.  PAT (Port Address Translation / Many-to-One Mapping):  Multiple private IP addresses share a  single public IP , with unique port numbers distinguishing individual connections.  
+
+How NAT Translates Traffic 
+-  Outbound Traffic (Private → Public):   
+  When a device from the internal network sends data to the internet, the NAT-enabled router (or NAT-compatible device) modifies the  source IP  in the outgoing packet to a  public IP  based on the configured NAT rules.  
+
+-  Inbound Traffic (Public → Private):   
+  When a response or incoming packet arrives, its  destination IP  will be the public IP assigned by NAT. The NAT device then performs a reverse translation, mapping it back to the corresponding  private IP  in the internal network using its configured rules.
+
+This bidirectional translation ensures proper routing between private networks and external public networks.
+

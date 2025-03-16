@@ -1,0 +1,6 @@
+Steps:
+Log in to your router’s web interface.
+Go to the DHCP settings or IP reservation section.
+Find the device’s MAC address in the list of connected devices (or manually enter it).
+Assign a specific IP address within the DHCP range to that MAC address.
+Save the settings; the router will now reserve this IP for the device whenever it connects.

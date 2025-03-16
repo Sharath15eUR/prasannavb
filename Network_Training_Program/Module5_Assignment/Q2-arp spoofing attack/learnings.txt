@@ -1,0 +1,11 @@
+ARP SPOOFING:
+ ARP Spoofing/Poisoning is a technique used by hackers/attackers to redirect the network traffic.In his attack , the attacker acts like an legitimate(Mostly router).
+AS we know every ARP contains an ARP request and reply . So what happens is when an device don't know the MAC address , it sends an ARP request to identify the MAC address .
+During this process , the attacker intercept and act as legitimate user and send arp reply from his side with his MAC address . The requested device doesn't know that an attacker intercepted the ARP protocol and sends all packet to the MAC address of the attacker device. 
+
+Since CISCO Packet tracer don't allow ARP spoofing, what I did was,
+With Victim assigned 192.168.29.2
+With Legitimate assigned 192.168.29.3
+With Attacker assigned 192.168.29.4
+
+So initially  a ping done to test the connectivity.Later I went to physical tab of legitimate and powered off it and assigned the IP 192.168.29.3 to the attacker to simulate ARP spoofing and made an ping to check the ARP table .

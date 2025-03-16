@@ -1,0 +1,9 @@
+ARP:(Address resolution protocol)
+
+ARP is an protocol that is used to resolve the ip address.When we perform communication between devices from same or different network, we need to know the exact MAC address of the device. InOrder to identify the MAC Address , we use ARP protocol where we will be sending an ARP request to get an ARP response.
+
+ARP Request:
+It an request sent by the source device with its source IP and MAC and it broadcast to entire network with a message "Who has the particular private IP address"
+
+ARP Response:
+The device with the private Ip respond back with its own MAC address and unicast the response to the particular device which raised an ARP request and the destinated device stores the MAC on its ARP cache table.
