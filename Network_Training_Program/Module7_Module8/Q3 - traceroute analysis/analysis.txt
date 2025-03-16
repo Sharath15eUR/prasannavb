@@ -1,0 +1,12 @@
+traceroute is a network diagnostic tool used to trace the path that packets take from our device to a destination, such as google.com.
+
+Traceroute Options:
+
+tracert google.com - Trace the path that packet travels from our device to google.com
+
+tracert -h 10 google.com - Shows the trace with maximum of 10 hops .Default is 30 hops
+
+tracert -4 google.com - command that specifically forces IPv4 for the traceroute to google.com.
+
+tracert -6 google.com - command that specifically forces IPv6 for the traceroute to google.com.
+

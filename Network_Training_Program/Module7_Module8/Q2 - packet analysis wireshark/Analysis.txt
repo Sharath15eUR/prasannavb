@@ -1,0 +1,19 @@
+TCP:
+Transmission control protocol (TCP) is an connection oriented protocol and reliable due to the acknowledgement packets.
+In TCP:
+1. SYN -SYN packet sent by client for connection establishment
+2. SYN-ACK - This is the acknowledgement packet sent from server to client to confirm the connection acceptance
+3. ACK - This process completes the connection setup process and till FIN / RST was sent the same connection used between the client and
+	server. 
+
+UDP:
+User datagram protocol(UDP) is an connection less protocol that doesn't have an acknowledgement like TCP. It used to send packet continuously irrespective of packet loss. Mostly they are used in Live streaming platforms
+
+DNS:
+Domain name System is an protocol that used to find the IP address with help of the domain name.
+For DNS packets:
+•	Transaction ID: Unique identifier for queries.
+•	Flags: Request/response, recursion.
+•	Questions & Answers: Query type (A, AAAA, CNAME).
+•	TTL: How long the response is valid.
+ 
